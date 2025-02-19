@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "monocraft";
-  src: url("../fonts/Monocraft.otf") format("opentype");
-  font-style: normal;
+  font-family: "Pixelizer";
+  src: url("../fonts/PixelizerBold.ttf") format("truetype");
+  font-style: bold;
   font-weight: 700;
 }

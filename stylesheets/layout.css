@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+section {
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+}
+
+body {
+  display: block;
+  font-family: "Pixelizer";
+  position: relative;
+  background-color: rgba(12, 111, 161, 100);
+  background-image: url(../images/фон.svg);
+}
