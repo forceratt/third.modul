@@ -1,0 +1,137 @@
+@keyframes R {
+  0% {
+    transform: translate3d(0, -20%, 0);
+  }
+  50% {
+    transform: translate3d(0, 20%, 0);
+  }
+  100% {
+    transform: translate3d(0, -20%, 0);
+  }
+}
+@keyframes U {
+  0% {
+    transform: translate3d(0, 20%, 0);
+  }
+  50% {
+    transform: translate3d(0, -20%, 0);
+  }
+  100% {
+    transform: translate3d(0, 20%, 0);
+  }
+}
+@keyframes M {
+  0% {
+    transform: translate3d(0, -20%, 0);
+  }
+  50% {
+    transform: translate3d(0, 20%, 0);
+  }
+  100% {
+    transform: translate3d(0, -20%, 0);
+  }
+}
+@keyframes B {
+  0% {
+    transform: translate3d(0, 20%, 0);
+  }
+  50% {
+    transform: translate3d(0, -20%, 0);
+  }
+  100% {
+    transform: translate3d(0, 20%, 0);
+  }
+}
+@keyframes L {
+  0% {
+    transform: translate3d(0, -20%, 0);
+  }
+  50% {
+    transform: translate3d(0, 20%, 0);
+  }
+  100% {
+    transform: translate3d(0, -20%, 0);
+  }
+}
+@keyframes E {
+  0% {
+    transform: translate3d(0, 20%, 0);
+  }
+  50% {
+    transform: translate3d(0, -20%, 0);
+  }
+  100% {
+    transform: translate3d(0, 20%, 0);
+  }
+}
+@keyframes zvezdi {
+  0% {
+    background-image: url(../images/zvezdi.svg);
+  }
+  50% {
+    background-image: url(../images/zvezdi_rev.svg);
+  }
+  100% {
+    background-image: url(../images/zvezdi.svg);
+  }
+}
+@keyframes bubble {
+  0% {
+    transform: translate3d(0, 20%, 0);
+  }
+  50% {
+    transform: translate3d(0, -20%, 0);
+  }
+  100% {
+    transform: translate3d(0, 20%, 0);
+  }
+}
+@keyframes bubblevodup {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+}
+@keyframes swim {
+  0% {
+    transform: translateX(-50px) scaleX(1);
+  }
+  50% {
+    transform: translateX(25vw) scaleX(1);
+  }
+  51% {
+    transform: translateX(25vw) scaleX(-1);
+  }
+  100% {
+    transform: translateX(-50px) scaleX(-1);
+  }
+}
+@keyframes rusbubble {
+  0% {
+    background-image: url(../images/rusbubble.svg);
+  }
+  50% {
+    background-image: url(../images/rusbubble1.svg);
+  }
+  100% {
+    background-image: url(../images/rusbubble.svg);
+  }
+}
+@keyframes rusbubble1 {
+  0% {
+    transform: translate3d(0, 2%, 0);
+  }
+  50% {
+    transform: translate3d(0, -2%, 0);
+  }
+  100% {
+    transform: translate3d(0, 2%, 0);
+  }
+}

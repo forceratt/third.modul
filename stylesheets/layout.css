@@ -6,11 +6,452 @@ section {
   position: relative;
   overflow: hidden;
 }
-
 body {
   display: block;
   font-family: "Pixelizer";
-  position: relative;
   background-color: rgba(12, 111, 161, 100);
   background-image: url(../images/фон.svg);
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+div {
+  overflow: hidden;
+}
+.section1 {
+  display: flex;
+  flex-direction: row;
+  height: 50vw;
+}
+.RUMBLE {
+  display: flex;
+  flex-direction: row;
+}
+.R {
+  background-image: url(../images/R.svg);
+  width: 12vw;
+  height: 16vw;
+  margin-left: 7vw;
+  margin-top: 20vw;
+  background-size: cover;
+  transform: translate3d(0, -20%, 0);
+  animation: R 1s infinite linear;
+}
+.U {
+  background-image: url(../images/U.svg);
+  width: 12vw;
+  height: 16vw;
+  margin-left: 2.5vw;
+  margin-top: 23vw;
+  background-size: cover;
+  transform: translate3d(0, -20%, 0);
+  animation: U 1s infinite linear;
+}
+.M {
+  background-image: url(../images/M.svg);
+  width: 15vw;
+  height: 16vw;
+  margin-left: 2.5vw;
+  margin-top: 20vw;
+  background-size: cover;
+  transform: translate3d(0, -20%, 0);
+  animation: M 1s infinite linear;
+}
+.B {
+  background-image: url(../images/B.svg);
+  width: 12vw;
+  height: 16vw;
+  margin-left: 2.5vw;
+  margin-top: 23vw;
+  background-size: cover;
+  transform: translate3d(0, -20%, 0);
+  animation: B 1s infinite linear;
+}
+.L {
+  background-image: url(../images/L.svg);
+  width: 11.4vw;
+  height: 16vw;
+  margin-left: 2.5vw;
+  margin-top: 20vw;
+  background-size: cover;
+  transform: translate3d(0, -20%, 0);
+  animation: L 1s infinite linear;
+}
+.E {
+  background-image: url(../images/E.svg);
+  width: 11vw;
+  height: 16vw;
+  margin-left: 2.5vw;
+  margin-top: 23vw;
+  background-size: cover;
+  transform: translate3d(0, -20%, 0);
+  animation: E 1s infinite linear;
+}
+
+.sunduk1 {
+  background-image: url(../images/sunduk1.svg);
+  width: 18vw;
+  height: 18vw;
+  margin-left: 2vw;
+  margin-top: 32vw;
+  background-size: cover;
+  position: absolute;
+}
+.star {
+  background-image: url(../images/strar.svg);
+  width: 12vw;
+  height: 12vw;
+  margin-left: 73vw;
+  margin-top: 31vw;
+  background-size: cover;
+  position: absolute;
+}
+.rakushka {
+  background-image: url(../images/rakushka.svg);
+  width: 9vw;
+  height: 9vw;
+  margin-left: 16vw;
+  margin-top: 10vw;
+  background-size: cover;
+  position: absolute;
+}
+.sunduk2 {
+  background-image: url(../images/sunduk2.svg);
+  width: 16vw;
+  height: 16vw;
+  margin-left: 80vw;
+  margin-top: 3vw;
+  background-size: cover;
+  position: absolute;
+}
+.zvezdi {
+  background-image: url(../images/zvezdi.svg);
+  width: 8.5vw;
+  height: 5vw;
+  margin-left: 5.5vw;
+  margin-top: 34.5vw;
+  background-size: cover;
+  position: absolute;
+  animation: zvezdi 1s steps(1) infinite;
+}
+.zvezdi_rev {
+  background-image: url(../images/zvezdi_rev.svg);
+  width: 6.5vw;
+  height: 4vw;
+  margin-left: 86vw;
+  margin-top: 6vw;
+  background-size: cover;
+  position: absolute;
+  animation: zvezdi 1s steps(1) infinite;
+}
+.bubble {
+  background-image: url(../images/bubble.svg);
+  width: 3vw;
+  height: 3vw;
+  margin-left: 10vw;
+  margin-top: 5vw;
+  background-size: cover;
+  position: absolute;
+  animation: bubble 1s infinite linear;
+}
+.section2 {
+  display: flex;
+  flex-direction: row;
+  height: 65vw;
+}
+.sand {
+  background-image: url(../images/sand.svg);
+  width: 100vw;
+  height: 25vw;
+  margin-top: 40vw;
+
+  z-index: -1;
+}
+.kamenup {
+  background-image: url(../images/kamenup.svg);
+  width: 30vw;
+  height: 35vw;
+  margin-left: 70vw;
+  margin-top: 8.5vw;
+  background-size: cover;
+  position: absolute;
+
+  z-index: 1;
+}
+.kamendown {
+  background-image: url(../images/kamendown.svg);
+  width: 30vw;
+  height: 27vw;
+  margin-top: 38vw;
+  background-size: cover;
+  position: absolute;
+
+  z-index: 1;
+}
+.vodup {
+  background-image: url(../images/vodup.svg);
+  width: 16vw;
+  height: 23vw;
+  margin-top: 24vw;
+  margin-left: 3vw;
+  background-size: cover;
+  position: absolute;
+}
+.voddown {
+  background-image: url(../images/voddown.svg);
+  width: 19vw;
+  height: 23vw;
+  margin-top: 41.5vw;
+  margin-left: 80vw;
+  background-size: cover;
+  position: absolute;
+}
+.bubblevod1 {
+  background-image: url(../images/bubble.svg);
+  width: 1vw;
+  height: 1vw;
+  margin-top: 33vw;
+  margin-left: 4vw;
+  background-size: cover;
+  position: absolute;
+  animation: bubblevodup 2s linear infinite;
+}
+.bubblevod2 {
+  background-image: url(../images/bubble.svg);
+  width: 1vw;
+  height: 1vw;
+  margin-top: 40vw;
+  margin-left: 7vw;
+  background-size: cover;
+  position: absolute;
+  animation: bubblevodup 2s linear infinite;
+  animation-delay: 0.5s;
+}
+.bubblevod3 {
+  background-image: url(../images/bubble.svg);
+  width: 1vw;
+  height: 1vw;
+  margin-top: 45vw;
+  margin-left: 13vw;
+  background-size: cover;
+  position: absolute;
+  animation: bubblevodup 2s linear infinite;
+  animation-delay: 0.7s;
+}
+.bubblevod4 {
+  background-image: url(../images/bubble.svg);
+  width: 1vw;
+  height: 1vw;
+  margin-top: 27vw;
+  margin-left: 17vw;
+  background-size: cover;
+  position: absolute;
+  animation: bubblevodup 2s linear infinite;
+  animation-delay: 2.3s;
+}
+.bubblevod5 {
+  background-image: url(../images/bubble.svg);
+  width: 1vw;
+  height: 1vw;
+  margin-top: 50vw;
+  margin-left: 83vw;
+  background-size: cover;
+  position: absolute;
+  animation: bubblevodup 2s linear infinite;
+  animation-delay: 2.3s;
+
+  z-index: 3;
+}
+.bubblevod6 {
+  background-image: url(../images/bubble.svg);
+  width: 1vw;
+  height: 1vw;
+  margin-top: 58vw;
+  margin-left: 90vw;
+  background-size: cover;
+  position: absolute;
+  animation: bubblevodup 2s linear infinite;
+  animation-delay: 1s;
+
+  z-index: 3;
+}
+.bubblevod7 {
+  background-image: url(../images/bubble.svg);
+  width: 1vw;
+  height: 1vw;
+  margin-top: 47vw;
+  margin-left: 95vw;
+  background-size: cover;
+  position: absolute;
+  animation: bubblevodup 2s linear infinite;
+  animation-delay: 1.7s;
+
+  z-index: 3;
+}
+.fish {
+  background-image: url(../images/fish.svg);
+  width: 5vw;
+  height: 2.5vw;
+  margin-top: 24vw;
+  margin-left: 35vw;
+  background-size: cover;
+  position: absolute;
+  animation: swim 5s linear infinite;
+}
+.roke {
+  background-image: url(../images/roke.svg);
+  width: 9vw;
+  height: 5vw;
+  margin-left: 52vw;
+  margin-top: 45vw;
+  background-size: cover;
+  position: absolute;
+
+  z-index: 1;
+}
+.rusperp {
+  background-image: url(../images/rusperp.svg);
+  width: 20vw;
+  height: 20vw;
+  margin-top: 47vw;
+  margin-left: 13vw;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  background-size: cover;
+  position: absolute;
+
+  z-index: 0;
+}
+.centeredperp {
+  position: fixed;
+  bottom: 15vw;
+  left: 23vw;
+  width: 25vw;
+  height: 25vw;
+  transform: translate(-0%, -0%);
+}
+.russin {
+  background-image: url(../images/russin.svg);
+  width: 6vw;
+  height: 6vw;
+  margin-top: 45vw;
+  margin-left: 53vw;
+  background-size: cover;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  z-index: 0;
+}
+.centeredsin {
+  position: fixed;
+  bottom: 16vw;
+  right: 38vw;
+  width: 25vw;
+  height: 25vw;
+  transform: translate(-0%, -0%);
+}
+.rusgol {
+  background-image: url(../images/rusgol.svg);
+  width: 15.4vw;
+  height: 15vw;
+  margin-top: 14vw;
+  margin-left: 67vw;
+  background-size: cover;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  z-index: 0;
+}
+.centeredgol {
+  position: fixed;
+  bottom: 16vw;
+  right: 38vw;
+  width: 25vw;
+  height: 25vw;
+  transform: translate(-0%, -0%);
+}
+.ruszel {
+  background-image: url(../images/ruszel.svg);
+  width: 17.4vw;
+  height: 17vw;
+  margin-top: 47vw;
+  margin-left: 94vw;
+  background-size: cover;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  z-index: 0;
+}
+.centeredzel {
+  position: fixed;
+  bottom: 16vw;
+  right: 38vw;
+  width: 25vw;
+  height: 25vw;
+  transform: translate(-0%, -0%);
+}
+.rusbubble {
+  background-image: url(../images/rusbubble.svg);
+  width: 58vw;
+  height: 39vw;
+  margin-left: 20vw;
+  margin-top: 20vw;
+  background-size: cover;
+  position: absolute;
+
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  animation: rusbubble 1s steps(1) infinite, rusbubble1 2s infinite linear;
+  transition: opacity 0.2s ease-out, visibility 0.1s ease-out;
+  z-index: 3;
+}
+.hiddenrus {
+  opacity: 0;
+  visibility: hidden;
+}
+.section3 {
+  display: flex;
+  flex-direction: row;
+  height: 57vw;
+}
+.scena {
+  background-image: url(../images/scena.svg);
+  width: 43vw;
+  height: 18vw;
+  margin-top: 20vw;
+  margin-left: 28vw;
+  background-size: cover;
+  position: absolute;
+}
+.pair {
+  font-size: 4vw;
+  margin-top: 25vw;
+  margin-left: 39vw;
+  background-size: cover;
+  position: absolute;
+
+  cursor: pointer;
+  transition: opacity 0.2s ease-in-out;
+}
+.hiddenpair {
+  opacity: 0;
+  pointer-events: none;
 }
