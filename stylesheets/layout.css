@@ -18,6 +18,7 @@ body {
   padding: 0;
   justify-content: center;
   align-items: center;
+  cursor: url("../images/cursor.svg"), auto;
 }
 
 div {
@@ -154,15 +155,47 @@ div {
   width: 3vw;
   height: 3vw;
   margin-left: 10vw;
-  margin-top: 5vw;
+  margin-top: 20vw;
   background-size: cover;
   position: absolute;
-  animation: bubble 1s infinite linear;
+  animation: bubblevodup 2s linear infinite;
+
+  z-index: -1;
+}
+.bubble1 {
+  background-image: url(../images/bubble.svg);
+  width: 3vw;
+  height: 3vw;
+  margin-left: 30vw;
+  margin-top: 25vw;
+  background-size: cover;
+  position: absolute;
+  animation: bubblevodup 2s linear infinite;
+  animation-delay: 0.5s;
+
+  z-index: -1;
+}
+.bubble3 {
+  background-image: url(../images/bubble.svg);
+  width: 3vw;
+  height: 3vw;
+  margin-left: 60vw;
+  margin-top: 27vw;
+  background-size: cover;
+  position: absolute;
+  animation: bubblevodup 2s linear infinite;
+  animation-delay: 1.2s;
+
+  z-index: -1;
 }
 .section2 {
   display: flex;
   flex-direction: row;
   height: 65vw;
+}
+.okr {
+  display: flex;
+  flex-direction: row;
 }
 .sand {
   background-image: url(../images/sand.svg);
@@ -170,7 +203,7 @@ div {
   height: 25vw;
   margin-top: 40vw;
 
-  z-index: -1;
+  z-index: -3;
 }
 .kamenup {
   background-image: url(../images/kamenup.svg);
@@ -312,7 +345,7 @@ div {
   background-size: cover;
   position: absolute;
 
-  z-index: 1;
+  z-index: -1;
 }
 .rusperp {
   background-image: url(../images/rusperp.svg);
@@ -322,7 +355,7 @@ div {
   margin-left: 13vw;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
+  cursor: url("../images/cursorpoint.svg"), pointer;
   transition: all 0.3s ease-in-out;
   background-size: cover;
   position: absolute;
@@ -341,16 +374,14 @@ div {
   background-image: url(../images/russin.svg);
   width: 6vw;
   height: 6vw;
-  margin-top: 45vw;
-  margin-left: 53vw;
+  margin-top: 37vw;
+  margin-left: 20vw;
   background-size: cover;
   position: absolute;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
+  cursor: url("../images/cursorpoint.svg"), pointer;
   transition: all 0.3s ease-in-out;
-
-  z-index: 0;
 }
 .centeredsin {
   position: fixed;
@@ -370,7 +401,7 @@ div {
   position: absolute;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
+  cursor: url("../images/cursorpoint.svg"), pointer;
   transition: all 0.3s ease-in-out;
 
   z-index: 0;
@@ -393,10 +424,8 @@ div {
   position: absolute;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
+  cursor: url("../images/cursorpoint.svg"), pointer;
   transition: all 0.3s ease-in-out;
-
-  z-index: 0;
 }
 .centeredzel {
   position: fixed;
@@ -418,7 +447,7 @@ div {
   justify-content: center;
   align-items: center;
   text-align: center;
-  cursor: pointer;
+  cursor: url("../images/cursorpoint.svg"), pointer;
   animation: rusbubble 1s steps(1) infinite, rusbubble1 2s infinite linear;
   transition: opacity 0.2s ease-out, visibility 0.1s ease-out;
   z-index: 3;
@@ -448,10 +477,268 @@ div {
   background-size: cover;
   position: absolute;
 
-  cursor: pointer;
+  cursor: url("../images/cursorpoint.svg"), pointer;
   transition: opacity 0.2s ease-in-out;
+
+  z-index: 1;
 }
 .hiddenpair {
   opacity: 0;
   pointer-events: none;
+}
+.box {
+  position: absolute;
+  cursor: url("../images/cursorpoint.svg"), pointer;
+}
+.crab1 {
+  background-image: url(../images/crab.svg);
+  width: 6.8vw;
+  height: 5vw;
+  background-size: cover;
+  position: absolute;
+  left: 67vw;
+  top: 6vw;
+
+  cursor: url("../images/cursorpoint.svg"), pointer;
+  animation: crabdance 1s steps(1) infinite, animals 2s infinite linear;
+}
+.crab2 {
+  background-image: url(../images/crab.svg);
+  width: 6.8vw;
+  height: 5vw;
+  background-size: cover;
+  position: absolute;
+  left: 20vw;
+  top: 40vw;
+
+  cursor: url("../images/cursorpoint.svg"), pointer;
+  animation: crabdance 1s steps(1) infinite, animals 2s infinite linear;
+}
+.meduza1 {
+  background-image: url(../images/meduza.svg);
+  width: 7.5vw;
+  height: 8.5vw;
+  background-size: cover;
+  position: absolute;
+  left: 59vw;
+  top: 38vw;
+
+  cursor: url("../images/cursorpoint.svg"), pointer;
+  animation: meduzadance 0.7s steps(1) infinite, animals 2s infinite linear;
+}
+.meduza2 {
+  background-image: url(../images/meduza.svg);
+  width: 7.5vw;
+  height: 8.5vw;
+  background-size: cover;
+  position: absolute;
+  left: 5vw;
+  top: 5vw;
+
+  cursor: url("../images/cursorpoint.svg"), pointer;
+  animation: meduzadance 0.6s steps(1) infinite, animals 2s infinite linear;
+}
+.turtle1 {
+  background-image: url(../images/turtle.svg);
+  width: 7vw;
+  height: 4vw;
+  background-size: cover;
+  position: absolute;
+  left: 80vw;
+  top: 15vw;
+
+  cursor: url("../images/cursorpoint.svg"), pointer;
+  animation: turtledance 0.8s steps(1) infinite, animals 2s infinite linear;
+}
+.turtle2 {
+  background-image: url(../images/turtle.svg);
+  width: 7vw;
+  height: 4vw;
+  background-size: cover;
+  position: absolute;
+  left: 5vw;
+  top: 50vw;
+
+  cursor: url("../images/cursorpoint.svg"), pointer;
+  animation: turtledance 1.5s steps(1) infinite, animals 2s infinite linear;
+}
+.konek1 {
+  background-image: url(../images/konek.svg);
+  width: 4vw;
+  height: 8vw;
+  background-size: cover;
+  position: absolute;
+  left: 37vw;
+  top: 7vw;
+
+  cursor: url("../images/cursorpoint.svg"), pointer;
+  animation: konekdance 1s steps(1) infinite, animals 2s infinite linear;
+}
+.konek2 {
+  background-image: url(../images/konek.svg);
+  width: 4vw;
+  height: 8vw;
+  background-size: cover;
+  position: absolute;
+  left: 75vw;
+  top: 30vw;
+
+  cursor: url("../images/cursorpoint.svg"), pointer;
+  animation: konekdance 1.2s steps(1) infinite, animals 2s infinite linear;
+}
+.starred {
+  background-image: url(../images/starred.svg);
+  width: 9vw;
+  height: 9vw;
+  margin-left: 5vw;
+  margin-top: 30vw;
+  background-size: cover;
+  position: absolute;
+}
+.zelrakushka {
+  background-image: url(../images/zelrakushka.svg);
+  width: 7vw;
+  height: 7vw;
+  margin-left: 35vw;
+  margin-top: 45vw;
+  background-size: cover;
+  position: absolute;
+}
+.orrakushka {
+  background-image: url(../images/orrakushka.svg);
+  width: 10vw;
+  height: 9vw;
+  margin-left: 75vw;
+  margin-top: 46vw;
+  background-size: cover;
+  position: absolute;
+}
+.xren {
+  background-image: url(../images/xren.svg);
+  width: 5vw;
+  height: 5vw;
+  margin-left: 20vw;
+  margin-top: 12vw;
+  background-size: cover;
+  position: absolute;
+}
+.rozrakushka {
+  background-image: url(../images/rozrakushka.svg);
+  width: 8vw;
+  height: 8vw;
+  margin-left: 8vw;
+  margin-top: 17vw;
+  background-size: cover;
+  position: absolute;
+}
+.kraszvezda {
+  background-image: url(../images/kraszvezda.svg);
+  width: 8vw;
+  height: 8vw;
+  margin-left: 52vw;
+  margin-top: 8vw;
+  background-size: cover;
+  position: absolute;
+}
+.sinxren {
+  background-image: url(../images/sinxren.svg);
+  width: 8vw;
+  height: 8vw;
+  margin-left: 87vw;
+  margin-top: 20vw;
+  background-size: cover;
+  position: absolute;
+}
+.yellowxren {
+  background-image: url(../images/yellowxren.svg);
+  width: 4vw;
+  height: 4vw;
+  margin-left: 87vw;
+  margin-top: 35vw;
+  background-size: cover;
+  position: absolute;
+}
+.section4 {
+  display: flex;
+  flex-direction: row;
+  height: 57vw;
+}
+.game-container {
+  background-image: url(../images/sand.svg);
+  width: 100vw;
+  height: 57vw;
+  position: relative;
+}
+.big-container {
+  width: 40vw;
+  height: 40vw;
+  margin-left: 28vw;
+  margin-top: 8vw;
+  position: absolute;
+  background-size: cover;
+
+  cursor: url("../images/cursorpoint.svg"), pointer;
+}
+.sundukbig {
+  background-image: url(../images/sundukbigempty.svg);
+  width: 40vw;
+  height: 40vw;
+  margin-left: 28vw;
+  margin-top: 8vw;
+  position: absolute;
+  background-size: cover;
+
+  cursor: url("../images/cursorpoint.svg"), pointer;
+}
+.small {
+  width: 5vw;
+  height: 6vw;
+  cursor: url("../images/cursorpoint.svg"), pointer;
+  position: absolute;
+  background-size: cover;
+}
+.treasure {
+  font-size: 5vw;
+  margin-top: 13vw;
+  margin-left: 36.5vw;
+  background-size: cover;
+  position: absolute;
+  text-align: center;
+
+  cursor: url("../images/cursorpoint.svg"), pointer;
+  transition: opacity 0.2s ease-in-out;
+}
+.section5 {
+  display: flex;
+  flex-direction: row;
+  height: 22vw;
+}
+.name {
+  color: white;
+  font-size: 4vw;
+  margin-top: 4vw;
+  margin-left: 4vw;
+  -webkit-text-stroke: 0.1vw rgb(28 60 78);
+  position: absolute;
+  background-size: cover;
+  text-align: center;
+  animation: animals 2s infinite linear;
+}
+.podval {
+  color: rgb(84 188 234);
+  font-size: 3vw;
+  margin-top: 9vw;
+  margin-left: 4vw;
+  -webkit-text-stroke: 0.1vw rgb(28 60 78);
+  animation: animals 2s infinite linear;
+}
+.hse {
+  background-image: url(../images/hse.svg);
+  width: 28vw;
+  height: 12vw;
+  margin-top: 5vw;
+  margin-left: 67vw;
+  position: absolute;
+  background-size: cover;
+  animation: animals 2s infinite linear;
 }

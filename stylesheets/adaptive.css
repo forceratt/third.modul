@@ -1,0 +1,139 @@
+@media screen and (max-width: 414px) {
+  .section2 {
+    height: 175vw;
+  }
+  .okr {
+    margin-top: 95vw;
+  }
+  .rusbubble {
+    flex-direction: column;
+    width: 88vw;
+    height: 58.5vw;
+    margin-left: 6vw;
+    margin-top: 14vw;
+  }
+  .sand {
+    width: 100vw;
+    height: 35vw;
+  }
+  .kamenup {
+    width: 33vw;
+    height: 38vw;
+    margin-left: 67vw;
+  }
+  .kamendown {
+    width: 33vw;
+    height: 30vw;
+    margin-top: 45vw;
+  }
+  .voddown {
+    z-index: 2;
+    margin-top: 50vw;
+  }
+  .russin {
+    width: 10vw;
+    height: 10vw;
+    margin-top: 43vw;
+  }
+  .centeredsin {
+    position: fixed;
+    bottom: 100vw;
+    right: 38vw;
+    width: 30vw;
+    height: 30vw;
+    transform: translate(-0%, -0%);
+  }
+  .rusperp {
+    width: 24vw;
+    height: 24vw;
+    margin-top: 52.5vw;
+  }
+  .centeredperp {
+    position: fixed;
+    bottom: 100vw;
+    right: 38vw;
+    width: 30vw;
+    height: 30vw;
+    transform: translate(-0%, -0%);
+  }
+  .rusgol {
+    width: 20vw;
+    height: 20vw;
+    margin-top: 13vw;
+    margin-left: 64vw;
+  }
+  .centeredgol {
+    position: fixed;
+    bottom: 100vw;
+    right: 38vw;
+    width: 30vw;
+    height: 30vw;
+    transform: translate(-0%, -0%);
+  }
+  .ruszel {
+    width: 20vw;
+    height: 20vw;
+    margin-left: 90vw;
+
+    z-index: 2;
+  }
+  .centeredzel {
+    position: fixed;
+    bottom: 100vw;
+    right: 38vw;
+    width: 30vw;
+    height: 30vw;
+    transform: translate(-0%, -0%);
+  }
+  .section3 {
+    height: 100vw;
+  }
+  .scena {
+    width: 62vw;
+    height: 26vw;
+    margin-top: 35vw;
+    margin-left: 20vw;
+  }
+  .pair {
+    font-size: 6vw;
+    margin-top: 42vw;
+    margin-left: 35vw;
+  }
+  .crab2 {
+    top: 85vw;
+  }
+  .zelrakushka {
+    width: 10vw;
+    height: 10vw;
+    margin-top: 70vw;
+  }
+  .orrakushka {
+    margin-top: 60vw;
+  }
+  .xren {
+    width: 8vw;
+    height: 8vw;
+    margin-top: 66vw;
+    margin-left: 10vw;
+  }
+  .meduza1 {
+    top: 80vw;
+  }
+  .yellowxren {
+    margin-top: 77vw;
+  }
+  .konek1 {
+    top: 15vw;
+    left: 29vw;
+  }
+  .kraszvezda {
+    margin-left: 48vw;
+  }
+  .section4 {
+    height: 80vw;
+  }
+  .game-container {
+    width: 100vw;
+    height: 80vw;
+  }
+}

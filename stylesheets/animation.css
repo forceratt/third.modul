@@ -124,7 +124,63 @@
     background-image: url(../images/rusbubble.svg);
   }
 }
+
 @keyframes rusbubble1 {
+  0% {
+    transform: translate3d(0, 2%, 0);
+  }
+  50% {
+    transform: translate3d(0, -2%, 0);
+  }
+  100% {
+    transform: translate3d(0, 2%, 0);
+  }
+}
+@keyframes crabdance {
+  0% {
+    background-image: url(../images/crab.svg);
+  }
+  50% {
+    background-image: url(../images/crabdance.svg);
+  }
+  100% {
+    background-image: url(../images/crab.svg);
+  }
+}
+@keyframes meduzadance {
+  0% {
+    background-image: url(../images/meduza.svg);
+  }
+  50% {
+    background-image: url(../images/meduzadance.svg);
+  }
+  100% {
+    background-image: url(../images/meduza.svg);
+  }
+}
+@keyframes turtledance {
+  0% {
+    background-image: url(../images/turtle.svg);
+  }
+  50% {
+    background-image: url(../images/turtledance.svg);
+  }
+  100% {
+    background-image: url(../images/turtle.svg);
+  }
+}
+@keyframes konekdance {
+  0% {
+    background-image: url(../images/konek.svg);
+  }
+  50% {
+    background-image: url(../images/konekdance.svg);
+  }
+  100% {
+    background-image: url(../images/konek.svg);
+  }
+}
+@keyframes animals {
   0% {
     transform: translate3d(0, 2%, 0);
   }
