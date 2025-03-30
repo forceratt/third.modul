@@ -125,48 +125,42 @@ document.addEventListener("DOMContentLoaded", function () {
 const smallObjects = document.querySelectorAll(".small");
 const sundukbig = document.getElementById("sundukbig");
 
-// Размеры маленьких объектов в vw/vh
-const objWidthVW = 5; // 5vw (примерно 50px на 1000px экране)
-const objHeightVH = 5; // 5vh
+const objWidthVW = 5;
+const objHeightVH = 5;
 
-// Получаем размеры большого объекта в vw/vh + безопасную зону (2vw)
 function getsundukbigRect() {
   const rect = sundukbig.getBoundingClientRect();
   const vw = window.innerWidth / 100;
   const vh = window.innerHeight / 100;
 
   return {
-    left: rect.left / vw - 2, // Преобразуем px → vw и добавляем запас
+    left: rect.left / vw - 2,
     right: rect.right / vw + 2,
     top: rect.top / vh - 2,
     bottom: rect.bottom / vh + 2,
   };
 }
 
-// Проверяем, не пересекаются ли маленькие объекты с большим
 function isOverlapping(x, y, objWidth, objHeight, bigRect) {
   return !(
-    (
-      x + objWidth < bigRect.left || // Маленький объект полностью левее большого
-      x > bigRect.right || // Маленький объект полностью правее большого
-      y + objHeight < bigRect.top || // Маленький объект полностью выше большого
-      y > bigRect.bottom
-    ) // Маленький объект полностью ниже большого
+    x + objWidth < bigRect.left ||
+    x > bigRect.right ||
+    y + objHeight < bigRect.top ||
+    y > bigRect.bottom
   );
 }
 
-// Разбрасываем объекты случайно по экрану, избегая большого объекта
 function randomizePositions() {
   const bigRect = getsundukbigRect();
 
   smallObjects.forEach((obj) => {
     let x, y;
-    let attempts = 0; // Ограничение попыток генерации координат
+    let attempts = 0;
     const maxAttempts = 100;
 
     do {
-      x = Math.random() * (100 - objWidthVW); // Координаты в vw
-      y = Math.random() * (100 - objHeightVH); // Координаты в vh
+      x = Math.random() * (100 - objWidthVW);
+      y = Math.random() * (100 - objHeightVH);
       attempts++;
     } while (
       isOverlapping(x, y, objWidthVW, objHeightVH, bigRect) &&
@@ -195,6 +189,6 @@ sundukbig.addEventListener("drop", (e) => {
   const id = e.dataTransfer.getData("text/plain");
   const draggedElement = document.getElementById(id);
   if (draggedElement) {
-    draggedElement.remove(); // Удаляем объект при переносе
+    draggedElement.remove();
   }
 });
